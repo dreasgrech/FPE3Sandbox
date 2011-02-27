@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B1C98FD8-FDF4-4E25-A832-1BD798AFC17A}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Windows Phone</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FPE3Sandbox</RootNamespace>
+    <AssemblyName>FPE3Sandbox</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows Phone</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>9c27185b-d134-4afe-87e3-defbd9a6e9ee</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <XapFilename>$(AssemblyName).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <XnaWindowsPhoneManifestTemplate>Properties\WMAppManifest.xml</XnaWindowsPhoneManifestTemplate>
+    <TileImage>Background.png</TileImage>
+    <TileTitle>FPE3Sandbox</TileTitle>
+    <SupportedCultures>
+    </SupportedCultures>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows Phone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows Phone\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Windows Phone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows Phone\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarseerPhysicsBaseFramework">
+      <HintPath>..\..\..\FarseerPhysicsBaseFramework\bin\Windows Phone\Release\FarseerPhysicsBaseFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="FarseerPhysicsXNA, Version=3.2.4075.24338, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\farseerphysics-85371\Branches\XNA\bin\Windows Phone\Release\FarseerPhysicsXNA.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Devices.Sensors, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Bridge.cs" />
+    <Compile Include="Entities\Crosshair.cs" />
+    <Compile Include="Entities\Helicopter.cs" />
+    <Compile Include="Entities\IPlatform.cs" />
+    <Compile Include="Entities\Platforms\ElevatorPlatform.cs" />
+    <Compile Include="Entities\Platforms\Platform.cs" />
+    <Compile Include="Entities\Platforms\RotatingPlatform.cs" />
+    <Compile Include="Entities\Platforms\StaticPlatform.cs" />
+    <Compile Include="Entities\Rope.cs" />
+    <Compile Include="Entities\ScreenBounds.cs" />
+    <Compile Include="Entities\Sphere.cs" />
+    <Compile Include="Entities\Terrain.cs" />
+    <Compile Include="Entities\Vehicle.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="GameScreens\MainGameScreen.cs" />
+    <Compile Include="Helpers\AccelerometerSensor.cs" />
+    <Compile Include="Helpers\Parallax\Parallax.cs" />
+    <Compile Include="Helpers\Parallax\ParrallaxLayer.cs" />
+    <Compile Include="Helpers\TerrainSplitter.cs" />
+    <Compile Include="Helpers\TextureReaders\FileTextureReader.cs" />
+    <Compile Include="Helpers\TextureReaders\ITextureReader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\AppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </None>
+    <Compile Include="Program.cs" />
+    <None Include="VerticesList\vehicle.txt~" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+    <Content Include="Background.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+    <Content Include="VerticesList\terrain.txt" />
+    <Content Include="VerticesList\vehicle.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\..\farseerphysics-85371\DebugViews\DebugViewXNA\DebugView XNA WP7.csproj">
+      <Project>{F658A60D-5941-4CBE-8EC1-8AE20E93F60E}</Project>
+      <Name>DebugView XNA WP7</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\XNAScreenManager\XNAScreenManager.csproj">
+      <Project>{9A10F53E-2D98-48E8-9159-E97F70E06EC5}</Project>
+      <Name>XNAScreenManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FPE3SandboxContent\FPE3SandboxContent.contentproj">
+      <Name>FPE3SandboxContent</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

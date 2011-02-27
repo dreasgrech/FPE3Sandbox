@@ -1,0 +1,9 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="FPE3Sandbox" EntryPointType="FPE3Sandbox.Game1" RuntimeVersion="3.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="FPE3Sandbox" Source="FPE3Sandbox.dll" />
+    <AssemblyPart x:Name="DebugViewXNA" Source="DebugViewXNA.dll" />
+    <AssemblyPart x:Name="FarseerPhysicsBaseFramework" Source="FarseerPhysicsBaseFramework.dll" />
+    <AssemblyPart x:Name="FarseerPhysicsXNA" Source="FarseerPhysicsXNA.dll" />
+    <AssemblyPart x:Name="XNAScreenManager" Source="XNAScreenManager.dll" />
+  </Deployment.Parts>
+</Deployment>

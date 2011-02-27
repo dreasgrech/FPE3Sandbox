@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Images\block.png</Source>
+      <Name>Images\block</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\block.xnb</Output>
+      <Time>2011-02-27T12:23:46.4186457+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\crosshair1.png</Source>
+      <Name>Images\crosshair1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\crosshair1.xnb</Output>
+      <Time>2011-02-27T12:23:46.4296463+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\heli.png</Source>
+      <Name>Images\heli</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\heli.xnb</Output>
+      <Time>2011-02-27T12:23:46.5046506+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Parallax\cloud1.png</Source>
+      <Name>Images\Parallax\cloud1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\Parallax\cloud1.xnb</Output>
+      <Time>2011-02-27T12:23:46.5436528+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Parallax\cloud2.png</Source>
+      <Name>Images\Parallax\cloud2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\Parallax\cloud2.xnb</Output>
+      <Time>2011-02-27T12:23:46.5536534+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Parallax\stars.png</Source>
+      <Name>Images\Parallax\stars</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\Parallax\stars.xnb</Output>
+      <Time>2011-02-27T12:23:46.5626539+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Platforms\bug.png</Source>
+      <Name>Images\Platforms\bug</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\Platforms\bug.xnb</Output>
+      <Time>2011-02-27T12:23:46.5736545+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Platforms\platform1.png</Source>
+      <Name>Images\Platforms\platform1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\Platforms\platform1.xnb</Output>
+      <Time>2011-02-27T12:23:46.5806549+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Platforms\platform2.png</Source>
+      <Name>Images\Platforms\platform2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\Platforms\platform2.xnb</Output>
+      <Time>2011-02-27T12:23:46.5886554+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\ropeSection.png</Source>
+      <Name>Images\ropeSection</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\ropeSection.xnb</Output>
+      <Time>2011-02-27T12:23:46.5916556+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\sphere1.png</Source>
+      <Name>Images\sphere1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\sphere1.xnb</Output>
+      <Time>2011-02-27T12:23:46.599656+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Terrain\terrain-rocky.png</Source>
+      <Name>Images\Terrain\terrain-rocky</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\Terrain\terrain-rocky.xnb</Output>
+      <Time>2011-02-27T12:23:46.6096566+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Terrain\terrain2.png</Source>
+      <Name>Images\Terrain\terrain2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\Terrain\terrain2.xnb</Output>
+      <Time>2011-02-27T12:23:46.6226573+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Terrain\terrain2_foreground.png</Source>
+      <Name>Images\Terrain\terrain2_foreground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\Terrain\terrain2_foreground.xnb</Output>
+      <Time>2011-02-27T12:23:46.7096623+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Terrain\terrain3.png</Source>
+      <Name>Images\Terrain\terrain3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\Terrain\terrain3.xnb</Output>
+      <Time>2011-02-27T12:23:46.7206629+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Terrain\terrain3_foreground.png</Source>
+      <Name>Images\Terrain\terrain3_foreground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\Terrain\terrain3_foreground.xnb</Output>
+      <Time>2011-02-27T12:23:46.7266633+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Terrain\terrain_flat.png</Source>
+      <Name>Images\Terrain\terrain_flat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\Terrain\terrain_flat.xnb</Output>
+      <Time>2011-02-27T12:23:46.7326636+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\vehicle_body.png</Source>
+      <Name>Images\vehicle_body</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\vehicle_body.xnb</Output>
+      <Time>2011-02-27T12:23:46.7466644+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\wheel_green.png</Source>
+      <Name>Images\wheel_green</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\wheel_green.xnb</Output>
+      <Time>2011-02-27T12:23:46.756665+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\wheel_left.png</Source>
+      <Name>Images\wheel_left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\wheel_left.xnb</Output>
+      <Time>2011-02-27T12:23:46.7636654+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\wheel_red.png</Source>
+      <Name>Images\wheel_red</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\wheel_red.xnb</Output>
+      <Time>2011-02-27T12:23:46.773666+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\wheel_right.png</Source>
+      <Name>Images\wheel_right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\Images\wheel_right.xnb</Output>
+      <Time>2011-02-27T12:23:46.7806664+01:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>WindowsPhone</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Release</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3SandboxContent\</RootDirectory>
+      <LoggerRootDirectory>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\</LoggerRootDirectory>
+      <IntermediateDirectory>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3SandboxContent\obj\Windows Phone\Release\</IntermediateDirectory>
+      <OutputDirectory>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2010-12-21T15:32:59.1741684+01:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
