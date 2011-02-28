@@ -47,7 +47,7 @@ namespace FPE3Sandbox.GameScreens
             //var vehicle = new Vehicle(Game, world, new Vector2(500,150));
             entities = new List<IPlayable>
                            {
-                               new ScreenBounds(world, terrain.Width,GraphicsDeviceManager.GraphicsDevice.Viewport.Height),
+                               new ScreenBounds(world, terrain.Width, GraphicsDeviceManager.GraphicsDevice.Viewport.Height),
                                terrain,
                                //new TestEntity(game,"Images/block",new Vector2(400,200),1f,BodyType.Dynamic),
                                sphere,
@@ -56,11 +56,12 @@ namespace FPE3Sandbox.GameScreens
                                //new StaticPlatform(game,"platform1",new Vector2(600,500),0),
                                //new RotatingPlatform(game,"platform1",new Vector2(600,400),0,10f),
                                //new ElevatorPlatform(game,world,"platform2",new Vector2(400, 300),0,100f,new List<Vector2>{new Vector2(-200, 0), new Vector2(200,0), new Vector2(200, -200), new Vector2(-200,-200)}, 50f),
-                               new StaticPlatform(game,world,"platform2", new Vector2(970, 100),0),
+                               new StaticPlatform(game, world, "platform2", new Vector2(970, 100), 0),
                                //vehicle
                                //new Rope(game,world, spriteBatch, new Vector2(858, terrain.Position.Y - (terrain.Height/2f) + 22),664)
                                //new Bridge(game,world,spriteBatch, new Vector2(700, 243),new Vector2(1238, 216)),
-                               new Bridge(game,world,spriteBatch, new Vector2(714, 264),new Vector2(1241, 213)),
+                               new Bridge(world, spriteBatch, graphicsDeviceManager.GraphicsDevice, new Vector2(714, 264), new Vector2(1241, 213), Color.Brown),
+                               new Rope(world, graphicsDeviceManager.GraphicsDevice, spriteBatch, new Vector2(200), 100, Color.Brown, new Vector2(200, 200)),
                                crosshair
                            };
             parallax = new Parallax(game,spriteBatch,ParallaxDirection.Left);

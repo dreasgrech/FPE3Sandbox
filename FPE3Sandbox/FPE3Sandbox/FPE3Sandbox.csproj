@@ -99,7 +99,6 @@
     <Compile Include="Entities\Platforms\RotatingPlatform.cs" />
     <Compile Include="Entities\Platforms\StaticPlatform.cs" />
     <Compile Include="Entities\Rope.cs" />
-    <Compile Include="Entities\Rope2.cs" />
     <Compile Include="Entities\ScreenBounds.cs" />
     <Compile Include="Entities\Sphere.cs" />
     <Compile Include="Entities\Terrain.cs" />
