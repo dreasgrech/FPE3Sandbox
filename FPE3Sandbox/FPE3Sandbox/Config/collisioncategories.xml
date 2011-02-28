@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<categories>
+  <category name="terrain">1</category>
+  <category name="bridge">2</category>
+  <category name="sphere">3</category>
+  <category name="vehicle">4</category>
+  <category name="platform">5</category>
+</categories>

@@ -6,6 +6,7 @@ using FarseerPhysicsBaseFramework.GameEntities.Physics;
 using FarseerPhysicsBaseFramework.Helpers;
 using FarseerPhysicsBaseFramework.Helpers.Camera;
 using FPE3Sandbox.Helpers;
+using FPE3Sandbox.Settings;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input.Touch;
 
@@ -17,7 +18,7 @@ namespace FPE3Sandbox.Entities
         private TexturedGameEntity texture;
 
         private uint flickLimit = 30, consecutiveJumps = 2, finalJumpIntervalMs = 1000, currentJumpCount = 0;
-        private float moveForce = 50, jumpForce = 500;
+        private float moveForce = 2000, jumpForce = 6000;
         private DateTime lastJumpTime = DateTime.Now;
         private bool isOnGround;
 
@@ -31,8 +32,10 @@ namespace FPE3Sandbox.Entities
             body.OnCollision += Body_OnCollision;
             body.Friction = 50f;
             body.BodyType = BodyType.Dynamic;
-            sphere = new TexturedPhysicsEntity(game, world, texture, body, origin);
+            sphere = new TexturedPhysicsEntity(game, world, CollisionCategoriesSettings.Sphere,texture, body, origin);
+            //body.CollidesWith = ~CollisionCategoriesSettings.Terrain;
         }
+
         public void Draw(GameTime gameTime)
         {
             sphere.Draw(gameTime);
@@ -53,9 +56,9 @@ namespace FPE3Sandbox.Entities
 
             //Debug.WriteLine(reading.Position.X * moveForce);
             var x = reading.Position.X * moveForce;
+            x = MathHelper.Clamp(x, -200f, 200f);
             if (isOnGround)
             {
-                x = MathHelper.Clamp(x, -8f, 8f);
                 sphere.Body.ApplyTorque(x);
             }
             else

@@ -29,6 +29,7 @@ namespace FPE3Sandbox
             Content.RootDirectory = "Content";
             // Frame rate is 30 fps by default for Windows Phone.
             TargetElapsedTime = TimeSpan.FromTicks(333333);
+            IsFixedTimeStep = false;
         }
 
         /// <summary>
@@ -98,7 +99,7 @@ namespace FPE3Sandbox
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
             // TODO: Add your drawing code here
 

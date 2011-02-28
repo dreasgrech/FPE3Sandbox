@@ -50,9 +50,6 @@
     <XnaCompressContent>false</XnaCompressContent>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FarseerPhysicsBaseFramework">
-      <HintPath>..\..\..\FarseerPhysicsBaseFramework\bin\Windows Phone\Release\FarseerPhysicsBaseFramework.dll</HintPath>
-    </Reference>
     <Reference Include="FarseerPhysicsXNA, Version=3.2.4075.24338, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\farseerphysics-85371\Branches\XNA\bin\Windows Phone\Release\FarseerPhysicsXNA.dll</HintPath>
@@ -102,6 +99,7 @@
     <Compile Include="Entities\Platforms\RotatingPlatform.cs" />
     <Compile Include="Entities\Platforms\StaticPlatform.cs" />
     <Compile Include="Entities\Rope.cs" />
+    <Compile Include="Entities\Rope2.cs" />
     <Compile Include="Entities\ScreenBounds.cs" />
     <Compile Include="Entities\Sphere.cs" />
     <Compile Include="Entities\Terrain.cs" />
@@ -109,12 +107,14 @@
     <Compile Include="Game1.cs" />
     <Compile Include="GameScreens\MainGameScreen.cs" />
     <Compile Include="Helpers\AccelerometerSensor.cs" />
+    <Compile Include="Helpers\ConfigReaders\IConfigReader.cs" />
     <Compile Include="Helpers\Parallax\Parallax.cs" />
     <Compile Include="Helpers\Parallax\ParrallaxLayer.cs" />
     <Compile Include="Helpers\TerrainSplitter.cs" />
     <Compile Include="Helpers\TextureReaders\FileTextureReader.cs" />
     <Compile Include="Helpers\TextureReaders\ITextureReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\CollisionCategoriesSettings.cs" />
     <None Include="Properties\AppManifest.xml">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </None>
@@ -125,6 +125,10 @@
     <None Include="VerticesList\vehicle.txt~" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Config\collisioncategories.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\settings.xml" />
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png" />
     <Content Include="Background.png">
@@ -138,13 +142,18 @@
       <Project>{F658A60D-5941-4CBE-8EC1-8AE20E93F60E}</Project>
       <Name>DebugView XNA WP7</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\XNAScreenManager\XNAScreenManager.csproj">
+    <ProjectReference Include="..\..\..\FarseerPhysicsBaseFramework\FarseerPhysicsBaseFramework WP7.csproj">
+      <Project>{E94A5D53-D4C6-40F7-B43C-94CEA4C4CFEC}</Project>
+      <Name>FarseerPhysicsBaseFramework WP7</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\XNAScreenManager\XNAScreenManager WP7.csproj">
       <Project>{9A10F53E-2D98-48E8-9159-E97F70E06EC5}</Project>
-      <Name>XNAScreenManager</Name>
+      <Name>XNAScreenManager WP7</Name>
     </ProjectReference>
     <ProjectReference Include="..\FPE3SandboxContent\FPE3SandboxContent.contentproj">
-      <Name>FPE3SandboxContent</Name>
+      <Name>FPE3SandboxContent %28Content%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>
+      <Project>{7B8B9442-39D1-4B05-9F61-89F762B5FB72}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

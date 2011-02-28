@@ -41,9 +41,3 @@ bin\Windows Phone\Release\GameThumbnail.png
 c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\FPE3Sandbox.xap
 c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\obj\Windows Phone\Release\XapCacheFile.xml
 c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\Content\font.xnb
-c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\FPE3Sandbox.xap
-c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\obj\Windows Phone\Release\XapCacheFile.xml
-c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Release\AppManifest.xaml
-c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\obj\Windows Phone\Release\WMAppManifest.xml.g
-c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\obj\Windows Phone\Release\WMAppManifest.xml
-bin\Windows Phone\Release\GameThumbnail.png

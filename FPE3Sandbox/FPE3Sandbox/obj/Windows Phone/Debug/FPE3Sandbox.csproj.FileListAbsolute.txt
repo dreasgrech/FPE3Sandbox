@@ -41,3 +41,10 @@ c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\F
 c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\obj\Windows Phone\Debug\XapCacheFile.xml
 c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\font.xnb
 c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\DebugViewXNA.dll
+c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Config\collisioncategories.xml
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\FPE3Sandbox.xap
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\GameThumbnail.png

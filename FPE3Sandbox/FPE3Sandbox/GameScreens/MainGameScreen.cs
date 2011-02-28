@@ -7,6 +7,7 @@ using FarseerPhysicsBaseFramework.GameEntities;
 using FarseerPhysicsBaseFramework.Helpers;
 using FarseerPhysicsBaseFramework.Helpers.Camera;
 using FPE3Sandbox.Entities;
+using FPE3Sandbox.Entities.Platforms;
 using FPE3Sandbox.Helpers.Parallax;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -34,18 +35,19 @@ namespace FPE3Sandbox.GameScreens
 
         public MainGameScreen(Game game, SpriteBatch spriteBatch, GraphicsDeviceManager graphicsDeviceManager, ScreenManager screenManager) : base(game, spriteBatch, graphicsDeviceManager, screenManager)
         {
-            TouchPanel.EnabledGestures = GestureType.Tap | GestureType.FreeDrag | GestureType.Flick | GestureType.Pinch;
+            ConvertUnits.DisplayUnitsToSimUnitsRatio = 16f;
+            TouchPanel.EnabledGestures = GestureType.Tap | GestureType.FreeDrag | GestureType.Flick | GestureType.Pinch | GestureType.DoubleTap;
 
             world = new World(gravity);
             game.Services.AddService(typeof(World), world);
 
-            var sphere = new Sphere(game, world, new Vector2(850, 100), 10f);
+            var sphere = new Sphere(game, world, new Vector2(850, 0), 1f);
             var terrain = new Terrain(game, world, graphicsDeviceManager.GraphicsDevice.Viewport.Height);
             crosshair = new Crosshair(game, spriteBatch, graphicsDeviceManager.GraphicsDevice.Viewport.Width, graphicsDeviceManager.GraphicsDevice.Viewport.Height);
             //var vehicle = new Vehicle(Game, world, new Vector2(500,150));
             entities = new List<IPlayable>
                            {
-                               new ScreenBounds(world,GraphicsDeviceManager.GraphicsDevice.Viewport.Width,GraphicsDeviceManager.GraphicsDevice.Viewport.Height),
+                               new ScreenBounds(world, terrain.Width,GraphicsDeviceManager.GraphicsDevice.Viewport.Height),
                                terrain,
                                //new TestEntity(game,"Images/block",new Vector2(400,200),1f,BodyType.Dynamic),
                                sphere,
@@ -54,28 +56,26 @@ namespace FPE3Sandbox.GameScreens
                                //new StaticPlatform(game,"platform1",new Vector2(600,500),0),
                                //new RotatingPlatform(game,"platform1",new Vector2(600,400),0,10f),
                                //new ElevatorPlatform(game,world,"platform2",new Vector2(400, 300),0,100f,new List<Vector2>{new Vector2(-200, 0), new Vector2(200,0), new Vector2(200, -200), new Vector2(-200,-200)}, 50f),
-                               //new StaticPlatform(game,"platform1",new Vector2(200,650),0),
+                               new StaticPlatform(game,world,"platform2", new Vector2(970, 100),0),
                                //vehicle
                                //new Rope(game,world, spriteBatch, new Vector2(858, terrain.Position.Y - (terrain.Height/2f) + 22),664)
-                               new Bridge(game,world,spriteBatch, new Vector2(880,300),new Vector2(1450, 200)),
+                               //new Bridge(game,world,spriteBatch, new Vector2(700, 243),new Vector2(1238, 216)),
+                               new Bridge(game,world,spriteBatch, new Vector2(708, 254),new Vector2(1243, 209)),
                                crosshair
                            };
             parallax = new Parallax(game,spriteBatch,ParallaxDirection.Left);
             parallax.AddLayer("Images/Parallax/cloud1", 0.5f, 2);
             parallax.AddLayer("Images/Parallax/cloud2", 0.5f, 5);
-            game.Components.Add(parallax);
+            //game.Components.Add(parallax);
 
             camera = new Camera2D(game)
                          {
-                             Focus = crosshair,
+                             Focus = sphere,
                              MoveSpeed = 10f,
-                             //Clamp = p => new Vector2(
-                             //                 MathHelper.Clamp(p.X, Game.GraphicsDevice.Viewport.Width / 2f,
-                             //                                  Game.GraphicsDevice.Viewport.Width * 2 -
-                             //                                  Game.GraphicsDevice.Viewport.Width / 2),
-                             //                 MathHelper.Clamp(p.Y, float.NegativeInfinity,
-                             //                                  Game.GraphicsDevice.Viewport.Height / 2f)),
-                             Scale = 1.0f
+                             Clamp = p => new Vector2(
+                                              MathHelper.Clamp(p.X, Game.GraphicsDevice.Viewport.Width / 2f, terrain.Width - Game.GraphicsDevice.Viewport.Width / 2f),
+                                              MathHelper.Clamp(p.Y, float.NegativeInfinity, Game.GraphicsDevice.Viewport.Height / 2f)),
+                             Scale = 1f
                          };
             game.Components.Add(camera);
             debugView = new DebugViewXNA(world) {DefaultShapeColor = Color.White, SleepingShapeColor = Color.LightGray};
@@ -93,12 +93,16 @@ namespace FPE3Sandbox.GameScreens
             //camera.Scale *= viewScale;
             Vector2 size = (((new Vector2(GraphicsDeviceManager.GraphicsDevice.Viewport.Width, GraphicsDeviceManager.GraphicsDevice.Viewport.Height)) / (ConvertUnits.DisplayUnitsToSimUnitsRatio * 2)) / 1f);
             Matrix proj = Matrix.CreateOrthographicOffCenter(-size.X, size.X, size.Y, -size.Y, 0, 1),
-                   view = Matrix.CreateTranslation(camera.PositionWithoutClamp.X / -ConvertUnits.DisplayUnitsToSimUnitsRatio, camera.PositionWithoutClamp.Y / -ConvertUnits.DisplayUnitsToSimUnitsRatio, 0);
+                   //view = Matrix.CreateTranslation(camera.PositionWithoutClamp.X / -ConvertUnits.DisplayUnitsToSimUnitsRatio, camera.PositionWithoutClamp.Y / -ConvertUnits.DisplayUnitsToSimUnitsRatio, 0);
+                   view = Matrix.CreateTranslation(crosshair.Position.X / -ConvertUnits.DisplayUnitsToSimUnitsRatio, crosshair.Position.Y / -ConvertUnits.DisplayUnitsToSimUnitsRatio, 0);
+                   //view = Matrix.CreateTranslation(camera.Position.X / -ConvertUnits.DisplayUnitsToSimUnitsRatio, camera.Position.Y / -ConvertUnits.DisplayUnitsToSimUnitsRatio, 0);
             view *= Matrix.CreateScale(viewScale);
 
             SpriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.AlphaBlend, null, null, null, null, camera.Transform);// Matrix.CreateTranslation(camera.Position.X, camera.Position.Y, 0) * Matrix.CreateScale(viewScale));
+            //SpriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.AlphaBlend);
             if (isDebugOn)
             {
+
                 debugView.RenderDebugData(ref proj, ref view);
                 crosshair.Draw(gameTime);
             } else
@@ -141,8 +145,17 @@ namespace FPE3Sandbox.GameScreens
                 }
                 if (sample.GestureType == GestureType.FreeDrag)
                 {
-                    crosshair.Position += -sample.Delta * 2;// new Vector2(-sample.Position.X, sample.Position.Y);
-                    camera.Position += -sample.Delta * 2;
+                    if (isDebugOn)
+                    {
+                        crosshair.Position += -sample.Delta * 2;// new Vector2(-sample.Position.X, sample.Position.Y);
+                    }
+                    //camera.Position += -sample.Delta * 2;
+                }
+
+                if (isDebugOn && sample.GestureType == GestureType.DoubleTap) // reset the debug view to be in sync with the display view
+                {
+                    crosshair.Position = camera.Position;
+                    viewScale = 1f;
                 }
             }
         }

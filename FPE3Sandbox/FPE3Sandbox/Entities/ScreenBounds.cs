@@ -13,8 +13,9 @@ namespace FPE3Sandbox.Entities
         public ScreenBounds(World world, float screenWidth, float screenHeight)
         {
             left = CreateBarrier(world, new Vector2(0, screenHeight), new Vector2(0, -1000));
-            right = CreateBarrier(world, new Vector2(screenWidth * 2, screenHeight), new Vector2(screenWidth * 2, -1000));
+            right = CreateBarrier(world, new Vector2(screenWidth, screenHeight), new Vector2(screenWidth, -1000));
         }
+
         public void Draw(GameTime gameTime)
         {
         }

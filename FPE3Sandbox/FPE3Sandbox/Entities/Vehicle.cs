@@ -8,6 +8,7 @@ using FarseerPhysicsBaseFramework.GameEntities.Physics;
 using FarseerPhysicsBaseFramework.Helpers;
 using FarseerPhysicsBaseFramework.Helpers.Camera;
 using FPE3Sandbox.Helpers;
+using FPE3Sandbox.Settings;
 using Microsoft.Xna.Framework;
 
 namespace FPE3Sandbox.Entities
@@ -30,7 +31,7 @@ namespace FPE3Sandbox.Entities
 
 
             var chassisBody = BodyFactory.CreateRectangle(world, ConvertUnits.ToSimUnits(chassisTexture.Width), ConvertUnits.ToSimUnits(chassisTexture.Height), 10f, ConvertUnits.ToSimUnits(chassisTexture.Position));
-            body = new TexturedPhysicsEntity(game, world, chassisTexture, chassisBody, new Vector2(chassisTexture.Width/2f, chassisTexture.Height/2f));
+            body = new TexturedPhysicsEntity(game, world, CollisionCategoriesSettings.Vehicle, chassisTexture, chassisBody, new Vector2(chassisTexture.Width/2f, chassisTexture.Height/2f));
             
             //var bodyVertices = new FileTextureReader(@"VerticesList\vehicle.txt").GetVertices();
             //body = new TexturedPhysicsEntity(game,world,chassisTexture,bodyVertices,BodyType.Dynamic,10f);
@@ -39,13 +40,13 @@ namespace FPE3Sandbox.Entities
 
             float axisWidth = 5, axisHeight = 50;
             Vector2 axisCentroid = new Vector2(axisWidth/2f, axisHeight/2f);
-            PhysicsGameEntity leftAxis = new PhysicsGameEntity(game, world, BodyFactory.CreateRectangle(world, ConvertUnits.ToSimUnits(axisWidth), ConvertUnits.ToSimUnits(axisHeight), 10f, ConvertUnits.ToSimUnits(new Vector2(body.Position.X - 50, body.Position.Y + 15))), axisCentroid),
-                rightAxis = new PhysicsGameEntity(game, world, BodyFactory.CreateRectangle(world, ConvertUnits.ToSimUnits(axisWidth), ConvertUnits.ToSimUnits(axisHeight), 10f, ConvertUnits.ToSimUnits(new Vector2(body.Position.X + 68, body.Position.Y + 15))), axisCentroid);
+            PhysicsGameEntity leftAxis = new PhysicsGameEntity(game, world, CollisionCategoriesSettings.Vehicle, BodyFactory.CreateRectangle(world, ConvertUnits.ToSimUnits(axisWidth), ConvertUnits.ToSimUnits(axisHeight), 10f, ConvertUnits.ToSimUnits(new Vector2(body.Position.X - 50, body.Position.Y + 15))), axisCentroid),
+                rightAxis = new PhysicsGameEntity(game, world, CollisionCategoriesSettings.Vehicle, BodyFactory.CreateRectangle(world, ConvertUnits.ToSimUnits(axisWidth), ConvertUnits.ToSimUnits(axisHeight), 10f, ConvertUnits.ToSimUnits(new Vector2(body.Position.X + 68, body.Position.Y + 15))), axisCentroid);
             
             leftAxis.Angle = MathHelper.ToRadians(90);
 
-            leftWheel = new TexturedPhysicsEntity(game,world, new TexturedGameEntity(game, new Vector2(leftAxis.Position.X,leftAxis.Position.Y + 20), 0, "Images/wheel_left", 1), 10f, BodyType.Static);
-            rightWheel = new TexturedPhysicsEntity(game,world,new TexturedGameEntity(game, new Vector2(rightAxis.Position.X, rightAxis.Position.Y + 20), 0, "Images/wheel_right", 1), 10f, BodyType.Static);
+            leftWheel = new TexturedPhysicsEntity(game, world, CollisionCategoriesSettings.Vehicle, new TexturedGameEntity(game, new Vector2(leftAxis.Position.X, leftAxis.Position.Y + 20), 0, "Images/wheel_left", 1), 10f, BodyType.Static);
+            rightWheel = new TexturedPhysicsEntity(game, world, CollisionCategoriesSettings.Vehicle, new TexturedGameEntity(game, new Vector2(rightAxis.Position.X, rightAxis.Position.Y + 20), 0, "Images/wheel_right", 1), 10f, BodyType.Static);
             ApplyToWheels();
             parts.Add(body);
             parts.Add(leftWheel);
@@ -78,8 +79,7 @@ namespace FPE3Sandbox.Entities
         static void SetPartDynamics(Body body)
         {
             body.BodyType = BodyType.Static;
-            body.CollisionCategories = Category.Cat2;
-            body.CollidesWith = ~Category.Cat2;
+            body.CollidesWith = ~CollisionCategoriesSettings.Vehicle;
             //body.CollisionGroup = 2;
         }
         public void Draw(GameTime gameTime)

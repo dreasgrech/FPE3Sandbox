@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Platforms\platform2.xnb</Output>
-      <Time>2011-02-27T12:23:46.5886554+01:00</Time>
+      <Time>2011-02-27T23:42:19.6613099+01:00</Time>
     </Item>
     <Item>
       <Source>Images\ropeSection.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\ropeSection.xnb</Output>
-      <Time>2011-02-27T12:23:46.5916556+01:00</Time>
+      <Time>2011-02-28T03:23:37.8667799+01:00</Time>
     </Item>
     <Item>
       <Source>Images\sphere1.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrain-rocky.xnb</Output>
-      <Time>2011-02-27T12:23:46.6096566+01:00</Time>
+      <Time>2011-02-27T23:51:16.0009868+01:00</Time>
     </Item>
     <Item>
       <Source>Images\Terrain\terrain2.png</Source>
@@ -205,10 +205,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3SandboxContent\</RootDirectory>
-      <LoggerRootDirectory>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\</LoggerRootDirectory>
-      <IntermediateDirectory>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3SandboxContent\obj\Windows Phone\Debug\</IntermediateDirectory>
-      <OutputDirectory>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3SandboxContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3SandboxContent\obj\Windows Phone\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

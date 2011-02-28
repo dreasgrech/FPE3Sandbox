@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using FarseerPhysics.Collision.Shapes;
@@ -36,14 +37,37 @@ namespace FPE3Sandbox.Entities
             }
         }
 
+        private Category collisionCategory;
+        public Category CollisionCategory
+        {
+            get { return collisionCategory; }
+            set
+            {
+                collisionCategory = value;
+                ApplyToRope(b => b.CollisionCategories = collisionCategory);
+            }
+        }
+
+        private Category collidesWith;
+        public Category CollidesWith
+        {
+            get { return collidesWith; }
+            set
+            {
+                collidesWith = value;
+                ApplyToRope(b => b.CollidesWith = collidesWith);
+            }
+        }
+
         /// <summary>
         /// 
         /// </summary>
         /// <param name="game"></param>
         /// <param name="world"></param>
         /// <param name="firstLinkPosition">The position of the first end of the rope in display units (pixels)</param>
-        public Rope(Game game, World world, SpriteBatch spriteBatch, Vector2 firstLinkPosition, float length, Texture2D ropeTexture)
+        public Rope(Game game, World world, SpriteBatch spriteBatch, Vector2 firstLinkPosition, float length, Texture2D ropeTexture, Category collisionCategory)
         {
+            this.collisionCategory = collisionCategory;
             this.spriteBatch = spriteBatch;
             RopeTexture = ropeTexture;
 
@@ -62,13 +86,15 @@ namespace FPE3Sandbox.Entities
             int neededBodies = (int)(ConvertUnits.ToSimUnits(length) / ConvertUnits.ToSimUnits(chainHeight)) / 2;
             chainLinks = PathManager.EvenlyDistributeShapesAlongPath(world, path, shape, BodyType.Dynamic, neededBodies);
 
-            foreach (Body chainLink in chainLinks)
-            {
-                foreach (Fixture f in chainLink.FixtureList)
-                {
-                    f.Friction = 0.02f;
-                }
-            }
+
+            ApplyToRope(chainLink =>
+                            {
+                                foreach (Fixture f in chainLink.FixtureList)
+                                {
+                                    f.Friction = 0.02f;
+                                    f.CollisionCategories = collisionCategory;
+                                }
+                            });
 
             List<RevoluteJoint> joints = PathManager.AttachBodiesWithRevoluteJoint(world, chainLinks,
                                                                                    ConvertUnits.ToSimUnits(0, -chainHeight),
@@ -86,6 +112,18 @@ namespace FPE3Sandbox.Entities
 
         public void Update(GameTime gameTime)
         {
+        }
+
+        void ApplyToRope(Action<Body> action)
+        {
+            if (chainLinks == null)
+            {
+                return;
+            }
+            foreach (Body chainLink in chainLinks)
+            {
+                action(chainLink);
+            }
         }
     }
 }
