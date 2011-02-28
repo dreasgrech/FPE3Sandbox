@@ -15,7 +15,7 @@ namespace FPE3Sandbox.Entities
 {
     class Bridge:IPlayable
     {
-        private Rope2 rope;
+        private Rope rope;
         private List<Body> bridgeBodies;
         private SpriteBatch spriteBatch;
         private Texture2D texture;
@@ -28,11 +28,7 @@ namespace FPE3Sandbox.Entities
             texture = game.Content.Load<Texture2D>("Images/ropeSection");
             var distance = Vector2.Distance(worldAnchorA, worldAnchorB);
 
-
-
-            rope = new Rope2(game, world, worldAnchorA, distance);
-            JointFactory.CreateFixedRevoluteJoint(world, rope.FirstEnd, Vector2.Zero, ConvertUnits.ToSimUnits(worldAnchorA));
-            JointFactory.CreateFixedRevoluteJoint(world, rope.LastEnd, Vector2.Zero, ConvertUnits.ToSimUnits(worldAnchorB));
+            rope = new Rope(world, worldAnchorA, distance,worldAnchorA,worldAnchorB);
 
             foreach (var segment in rope.Segments)
             {

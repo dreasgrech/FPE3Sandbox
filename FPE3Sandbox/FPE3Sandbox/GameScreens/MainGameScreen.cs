@@ -60,7 +60,7 @@ namespace FPE3Sandbox.GameScreens
                                //vehicle
                                //new Rope(game,world, spriteBatch, new Vector2(858, terrain.Position.Y - (terrain.Height/2f) + 22),664)
                                //new Bridge(game,world,spriteBatch, new Vector2(700, 243),new Vector2(1238, 216)),
-                               new Bridge(game,world,spriteBatch, new Vector2(708, 254),new Vector2(1243, 209)),
+                               new Bridge(game,world,spriteBatch, new Vector2(714, 264),new Vector2(1241, 213)),
                                crosshair
                            };
             parallax = new Parallax(game,spriteBatch,ParallaxDirection.Left);

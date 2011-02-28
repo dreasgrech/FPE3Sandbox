@@ -1,129 +1,90 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Text;
 using FarseerPhysics.Collision.Shapes;
 using FarseerPhysics.Common;
 using FarseerPhysics.Dynamics;
-using FarseerPhysics.Dynamics.Joints;
 using FarseerPhysics.Factories;
 using FarseerPhysicsBaseFramework.GameEntities;
 using FarseerPhysicsBaseFramework.Helpers;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 
 namespace FPE3Sandbox.Entities
 {
-    class Rope:IPlayable
+    public class Rope:IPlayable
     {
-        public Texture2D RopeTexture { get; set; }
+        public Body FirstEnd { get; private set; }
+        public Body LastEnd { get; private set; }
+        public List<Body> Segments { get; set; }
 
-        private SpriteBatch spriteBatch;
+        private float boxWidthSimulation, boxHeightSimulation, lastSegmentWidth;
 
-        private List<Body> chainLinks;
 
-        public Body FirstSection
+        public Rope(World world, Vector2 initialPosition, float length, Vector2 worldAnchorA) : this(world,initialPosition,length)
         {
-            get
-            {
-                return chainLinks.First();
-            }
+            JointFactory.CreateFixedRevoluteJoint(world, Segments.First(), new Vector2(-boxWidthSimulation / 2, 0), ConvertUnits.ToSimUnits(worldAnchorA));
         }
 
-        public Body LastSection
+        public Rope(World world, Vector2 initialPosition, float length, Vector2 worldAnchorA, Vector2 worldAnchorB) : this(world,initialPosition,length,worldAnchorA)
         {
-            get
-            {
-                return chainLinks.Last();
-            }
+            JointFactory.CreateFixedRevoluteJoint(world, Segments.Last(), new Vector2(lastSegmentWidth / 2, 0), ConvertUnits.ToSimUnits(worldAnchorB));
         }
 
-        private Category collisionCategory;
-        public Category CollisionCategory
+        private Rope(World world, Vector2 initialPosition, float length)
         {
-            get { return collisionCategory; }
-            set
+            var type = BodyType.Dynamic;
+            Segments = new List<Body>();
+            float boxWidth = 30f,
+                  boxHeight = 5f;
+
+            boxWidthSimulation = ConvertUnits.ToSimUnits(boxWidth);
+            boxHeightSimulation = ConvertUnits.ToSimUnits(boxHeight);
+
+            var position = new Vector2(initialPosition.X + boxWidth/2f, initialPosition.Y);
+
+            FirstEnd = BodyFactory.CreateRectangle(world, boxWidthSimulation, boxHeightSimulation, 10f, ConvertUnits.ToSimUnits(position));
+            FirstEnd.BodyType = type;
+            Segments.Add(FirstEnd);
+            var nextPosition = new Vector2(FirstEnd.Position.X + boxWidthSimulation, FirstEnd.Position.Y);
+            float totalLength = boxWidthSimulation;
+
+            while (totalLength + boxWidthSimulation <= ConvertUnits.ToSimUnits(length))
             {
-                collisionCategory = value;
-                ApplyToRope(b => b.CollisionCategories = collisionCategory);
+                var body = BodyFactory.CreateRectangle(world, boxWidthSimulation, boxHeightSimulation, 10f, nextPosition);
+                body.BodyType = type;
+                JointFactory.CreateRevoluteJoint(world, body, Segments.Last(), new Vector2(boxWidthSimulation / 2, 0));
+                Segments.Add(body);
+                nextPosition.X += boxWidthSimulation;
+                totalLength += boxWidthSimulation;
             }
-        }
 
-        private Category collidesWith;
-        public Category CollidesWith
-        {
-            get { return collidesWith; }
-            set
+            lastSegmentWidth = ConvertUnits.ToSimUnits(length) - totalLength;
+            if (lastSegmentWidth > 0)
             {
-                collidesWith = value;
-                ApplyToRope(b => b.CollidesWith = collidesWith);
+                nextPosition.X -= boxWidthSimulation;
+                nextPosition.X += boxWidthSimulation/2 + lastSegmentWidth/2;
+                LastEnd = BodyFactory.CreateRectangle(world, lastSegmentWidth, boxHeightSimulation, 10f, nextPosition);
+                JointFactory.CreateRevoluteJoint(world, LastEnd, Segments.Last(), new Vector2(boxWidthSimulation/2,0));
+                LastEnd.BodyType = type;
+                totalLength += lastSegmentWidth;
+                Segments.Add(LastEnd);
+            } else
+            {
+                lastSegmentWidth = boxWidthSimulation;
+                LastEnd = Segments.Last();
             }
-        }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="game"></param>
-        /// <param name="world"></param>
-        /// <param name="firstLinkPosition">The position of the first end of the rope in display units (pixels)</param>
-        public Rope(Game game, World world, SpriteBatch spriteBatch, Vector2 firstLinkPosition, float length, Texture2D ropeTexture, Category collisionCategory)
-        {
-            this.collisionCategory = collisionCategory;
-            this.spriteBatch = spriteBatch;
-            RopeTexture = ropeTexture;
-
-            float chainWidth = ropeTexture.Width / 2f, // Why do I need to divide the size of the texture for FPE to build them with the correct size?
-                chainHeight = ropeTexture.Height / 2f;
-
-            var pathVertices = new[] { firstLinkPosition, new Vector2(firstLinkPosition.X + length, firstLinkPosition.Y) }.Select(ConvertUnits.ToSimUnits).ToList();
-            Path path = new Path(pathVertices);
-
-            Vertices rec = PolygonTools.CreateRectangle(ConvertUnits.ToSimUnits(chainWidth), ConvertUnits.ToSimUnits(chainHeight));
-
-            PolygonShape shape = new PolygonShape(rec, 20);
-
-            //var ropeLength = Vector2.Distance(pathVertices[0], pathVertices[1]);
-
-            int neededBodies = (int)(ConvertUnits.ToSimUnits(length) / ConvertUnits.ToSimUnits(chainHeight)) / 2;
-            chainLinks = PathManager.EvenlyDistributeShapesAlongPath(world, path, shape, BodyType.Dynamic, neededBodies);
-
-
-            ApplyToRope(chainLink =>
-                            {
-                                foreach (Fixture f in chainLink.FixtureList)
-                                {
-                                    f.Friction = 0.02f;
-                                    f.CollisionCategories = collisionCategory;
-                                }
-                            });
-
-            List<RevoluteJoint> joints = PathManager.AttachBodiesWithRevoluteJoint(world, chainLinks,
-                                                                                   ConvertUnits.ToSimUnits(0, -chainHeight),
-                                                                                   ConvertUnits.ToSimUnits(0, chainHeight),
-                                                                                   false, false);
+            Debug.Assert(totalLength == ConvertUnits.ToSimUnits(length));
         }
 
         public void Draw(GameTime gameTime)
         {
-            foreach (var chainLink in chainLinks)
-            {
-                spriteBatch.Draw(RopeTexture, ConvertUnits.ToDisplayUnits(chainLink.Position), null, Color.White, chainLink.Rotation, new Vector2(RopeTexture.Width / 2f, RopeTexture.Height / 2f), 1f, SpriteEffects.None, 1f);
-            }
         }
 
         public void Update(GameTime gameTime)
         {
-        }
-
-        void ApplyToRope(Action<Body> action)
-        {
-            if (chainLinks == null)
-            {
-                return;
-            }
-            foreach (Body chainLink in chainLinks)
-            {
-                action(chainLink);
-            }
         }
     }
 }
