@@ -94,6 +94,7 @@
     <Compile Include="Entities\Crosshair.cs" />
     <Compile Include="Entities\Helicopter.cs" />
     <Compile Include="Entities\IPlatform.cs" />
+    <Compile Include="Entities\Landscape.cs" />
     <Compile Include="Entities\Platforms\ElevatorPlatform.cs" />
     <Compile Include="Entities\Platforms\Platform.cs" />
     <Compile Include="Entities\Platforms\RotatingPlatform.cs" />
@@ -103,6 +104,7 @@
     <Compile Include="Entities\Sphere.cs" />
     <Compile Include="Entities\Terrain.cs" />
     <Compile Include="Entities\Vehicle.cs" />
+    <Compile Include="Entities\Water.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameScreens\MainGameScreen.cs" />
     <Compile Include="Helpers\AccelerometerSensor.cs" />

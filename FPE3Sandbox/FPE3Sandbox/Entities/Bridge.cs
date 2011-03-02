@@ -17,17 +17,20 @@ namespace FPE3Sandbox.Entities
     {
         private Rope rope;
 
+        public float Length { get; private set; }
+
         public Bridge(World world, SpriteBatch spriteBatch, GraphicsDevice device, Vector2 worldAnchorA, Vector2 worldAnchorB, Color ropeColor)
         {
-            var distance = Vector2.Distance(worldAnchorA, worldAnchorB);
+            Length = Vector2.Distance(worldAnchorA, worldAnchorB);
 
-            rope = new Rope(world, device, spriteBatch, worldAnchorA, distance, ropeColor, worldAnchorA, worldAnchorB);
+            rope = new Rope(world, device, spriteBatch, worldAnchorA, Length, ropeColor, worldAnchorA, worldAnchorB);
 
             foreach (var segment in rope.Segments)
             {
                 segment.Body.CollisionCategories = Category.Cat9;
-                segment.Body.CollidesWith = ~CollisionCategoriesSettings.Terrain; // | ~Category.Cat9;
+                segment.Body.CollidesWith = ~CollisionCategoriesSettings.Terrain;
             }
+
         }
 
         public void Draw(GameTime gameTime)
@@ -37,6 +40,11 @@ namespace FPE3Sandbox.Entities
 
         public void Update(GameTime gameTime)
         {
+        }
+
+        public void Break(float lengthFromStart)
+        {
+            rope.Cut(lengthFromStart);
         }
     }
 }

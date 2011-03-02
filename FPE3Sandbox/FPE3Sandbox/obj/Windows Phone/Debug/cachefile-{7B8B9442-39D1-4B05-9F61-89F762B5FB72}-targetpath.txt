@@ -20,3 +20,8 @@ Content\Images\wheel_green.xnb
 Content\Images\wheel_left.xnb
 Content\Images\wheel_red.xnb
 Content\Images\wheel_right.xnb
+Content\Images\water.xnb
+Content\Images\Terrain\terrainLong0.xnb
+Content\Images\Terrain\terrainLong1.xnb
+Content\Images\Terrain\terrainLong2.xnb
+Content\Images\Terrain\terrainLong3.xnb

@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\block.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\block.xnb</Output>
       <Time>2011-02-27T12:23:46.4186457+01:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\crosshair1.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\crosshair1.xnb</Output>
       <Time>2011-02-27T12:23:46.4296463+01:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\heli.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\heli.xnb</Output>
       <Time>2011-02-27T12:23:46.5046506+01:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Parallax\cloud1.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\Parallax\cloud1.xnb</Output>
       <Time>2011-02-27T12:23:46.5436528+01:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Parallax\cloud2.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\Parallax\cloud2.xnb</Output>
       <Time>2011-02-27T12:23:46.5536534+01:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Parallax\stars.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\Parallax\stars.xnb</Output>
       <Time>2011-02-27T12:23:46.5626539+01:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Platforms\bug.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\Platforms\bug.xnb</Output>
       <Time>2011-02-27T12:23:46.5736545+01:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Platforms\platform1.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\Platforms\platform1.xnb</Output>
       <Time>2011-02-27T12:23:46.5806549+01:00</Time>
     </Item>
     <Item>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Platforms\platform2.xnb</Output>
-      <Time>2011-02-27T23:42:19.6613099+01:00</Time>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\Platforms\platform2.xnb</Output>
+      <Time>2011-02-27T12:23:46.5886554+01:00</Time>
     </Item>
     <Item>
       <Source>Images\ropeSection.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\ropeSection.xnb</Output>
-      <Time>2011-02-28T03:23:37.8667799+01:00</Time>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\ropeSection.xnb</Output>
+      <Time>2011-02-27T18:27:19.3262726+01:00</Time>
     </Item>
     <Item>
       <Source>Images\sphere1.png</Source>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\sphere1.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\sphere1.xnb</Output>
       <Time>2011-02-27T12:23:46.599656+01:00</Time>
     </Item>
     <Item>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrain-rocky.xnb</Output>
-      <Time>2011-02-27T23:51:16.0009868+01:00</Time>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\Terrain\terrain-rocky.xnb</Output>
+      <Time>2011-02-27T12:23:46.6096566+01:00</Time>
     </Item>
     <Item>
       <Source>Images\Terrain\terrain2.png</Source>
@@ -115,7 +115,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrain2.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\Terrain\terrain2.xnb</Output>
       <Time>2011-02-27T12:23:46.6226573+01:00</Time>
     </Item>
     <Item>
@@ -124,7 +124,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrain2_foreground.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\Terrain\terrain2_foreground.xnb</Output>
       <Time>2011-02-27T12:23:46.7096623+01:00</Time>
     </Item>
     <Item>
@@ -133,7 +133,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrain3.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\Terrain\terrain3.xnb</Output>
       <Time>2011-02-27T12:23:46.7206629+01:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrain3_foreground.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\Terrain\terrain3_foreground.xnb</Output>
       <Time>2011-02-27T12:23:46.7266633+01:00</Time>
     </Item>
     <Item>
@@ -151,7 +151,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrain_flat.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\Terrain\terrain_flat.xnb</Output>
       <Time>2011-02-27T12:23:46.7326636+01:00</Time>
     </Item>
     <Item>
@@ -160,7 +160,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\vehicle_body.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\vehicle_body.xnb</Output>
       <Time>2011-02-27T12:23:46.7466644+01:00</Time>
     </Item>
     <Item>
@@ -169,7 +169,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\wheel_green.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\wheel_green.xnb</Output>
       <Time>2011-02-27T12:23:46.756665+01:00</Time>
     </Item>
     <Item>
@@ -178,7 +178,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\wheel_left.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\wheel_left.xnb</Output>
       <Time>2011-02-27T12:23:46.7636654+01:00</Time>
     </Item>
     <Item>
@@ -187,7 +187,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\wheel_red.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\wheel_red.xnb</Output>
       <Time>2011-02-27T12:23:46.773666+01:00</Time>
     </Item>
     <Item>
@@ -196,64 +196,19 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\wheel_right.xnb</Output>
+      <Output>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\Images\wheel_right.xnb</Output>
       <Time>2011-02-27T12:23:46.7806664+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\water.png</Source>
-      <Name>Images\water</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\water.xnb</Output>
-      <Time>2011-02-28T22:49:49.335919+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\Terrain\terrainLong0.png</Source>
-      <Name>Images\Terrain\terrainLong0</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrainLong0.xnb</Output>
-      <Time>2011-03-02T00:33:49.4646312+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\Terrain\terrainLong1.png</Source>
-      <Name>Images\Terrain\terrainLong1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrainLong1.xnb</Output>
-      <Time>2011-03-02T00:33:49.4846324+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\Terrain\terrainLong2.png</Source>
-      <Name>Images\Terrain\terrainLong2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrainLong2.xnb</Output>
-      <Time>2011-03-02T00:33:49.4966331+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\Terrain\terrainLong3.png</Source>
-      <Name>Images\Terrain\terrainLong3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrainLong3.xnb</Output>
-      <Time>2011-03-02T00:33:49.5116339+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
-      <TargetPlatform>WindowsPhone</TargetPlatform>
-      <TargetProfile>Reach</TargetProfile>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3SandboxContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3SandboxContent\obj\Windows Phone\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\</OutputDirectory>
+      <RootDirectory>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3SandboxContent\</RootDirectory>
+      <LoggerRootDirectory>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\</LoggerRootDirectory>
+      <IntermediateDirectory>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3SandboxContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>c:\users\andreas\documents\visual studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

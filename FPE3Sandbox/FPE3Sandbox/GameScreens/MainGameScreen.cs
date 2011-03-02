@@ -41,14 +41,17 @@ namespace FPE3Sandbox.GameScreens
             world = new World(gravity);
             game.Services.AddService(typeof(World), world);
 
-            var sphere = new Sphere(game, world, new Vector2(850, 0), 1f);
-            var terrain = new Terrain(game, world, graphicsDeviceManager.GraphicsDevice.Viewport.Height);
+            var sphere = new Sphere(game, world, new Vector2(550, 0), 1f);
+            var terrain = new Terrain(game, world, graphicsDeviceManager.GraphicsDevice.Viewport.Height, "Images/Terrain/terrain-rocky");
+            var rope = new Rope(world, graphicsDeviceManager.GraphicsDevice, spriteBatch, new Vector2(200), 100, Color.Brown, new Vector2(200, 200));
+            var bridge = new Bridge(world, spriteBatch, graphicsDeviceManager.GraphicsDevice, new Vector2(714, 264),new Vector2(1241, 213), Color.Brown);
             crosshair = new Crosshair(game, spriteBatch, graphicsDeviceManager.GraphicsDevice.Viewport.Width, graphicsDeviceManager.GraphicsDevice.Viewport.Height);
             //var vehicle = new Vehicle(Game, world, new Vector2(500,150));
             entities = new List<IPlayable>
                            {
                                new ScreenBounds(world, terrain.Width, GraphicsDeviceManager.GraphicsDevice.Viewport.Height),
                                terrain,
+                               new Landscape(game,world, GraphicsDeviceManager.GraphicsDevice.Viewport.Height,new []{"Images/Terrain/terrainLong0","Images/Terrain/terrainLong1",/*"Images/Terrain/terrainLong2","Images/Terrain/terrainLong3",*/},Category.Cat11,1),
                                //new TestEntity(game,"Images/block",new Vector2(400,200),1f,BodyType.Dynamic),
                                sphere,
                                //new Helicopter(game,new Vector2(400,400)),
@@ -60,14 +63,15 @@ namespace FPE3Sandbox.GameScreens
                                //vehicle
                                //new Rope(game,world, spriteBatch, new Vector2(858, terrain.Position.Y - (terrain.Height/2f) + 22),664)
                                //new Bridge(game,world,spriteBatch, new Vector2(700, 243),new Vector2(1238, 216)),
-                               new Bridge(world, spriteBatch, graphicsDeviceManager.GraphicsDevice, new Vector2(714, 264), new Vector2(1241, 213), Color.Brown),
-                               new Rope(world, graphicsDeviceManager.GraphicsDevice, spriteBatch, new Vector2(200), 100, Color.Brown, new Vector2(200, 200)),
+                               bridge,
+                               rope,
+                               new Water(game,world,new Vector2(980,434), 419,140 ),
                                crosshair
                            };
             parallax = new Parallax(game,spriteBatch,ParallaxDirection.Left);
             parallax.AddLayer("Images/Parallax/cloud1", 0.5f, 2);
             parallax.AddLayer("Images/Parallax/cloud2", 0.5f, 5);
-            //game.Components.Add(parallax);
+            game.Components.Add(parallax);
 
             camera = new Camera2D(game)
                          {
@@ -82,6 +86,8 @@ namespace FPE3Sandbox.GameScreens
             debugView = new DebugViewXNA(world) {DefaultShapeColor = Color.White, SleepingShapeColor = Color.LightGray};
             debugView.LoadContent(graphicsDeviceManager.GraphicsDevice,game.Content);
             debugView.AppendFlags(DebugViewFlags.DebugPanel | DebugViewFlags.Joint | DebugViewFlags.Shape | DebugViewFlags.PerformanceGraph | DebugViewFlags.ContactPoints);
+
+            bridge.Break(bridge.Length/2);
         }
 
         public override string Name

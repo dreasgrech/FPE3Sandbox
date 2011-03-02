@@ -1,4 +1,5 @@
 using FarseerPhysics.Dynamics;
+using FarseerPhysics.Factories;
 using FarseerPhysicsBaseFramework.GameEntities;
 using FarseerPhysicsBaseFramework.GameEntities.Physics;
 using FPE3Sandbox.Settings;
@@ -10,7 +11,7 @@ namespace FPE3Sandbox.Entities
     {
         private TexturedGameEntity foreground;
 
-        public Terrain(Game game, World world, float screenHeight): base(game, world, CollisionCategoriesSettings.Terrain, new TexturedGameEntity(game, 0, "Images/Terrain/terrain-rocky", 0.9f),1f,BodyType.Static)
+        public Terrain(Game game, World world, float screenHeight, string baseImagePath): base(game, world, CollisionCategoriesSettings.Terrain, new TexturedGameEntity(game, 0, baseImagePath, 0.9f),1f,BodyType.Static)
         {
             X = Center.X;
             Y = screenHeight -(Height - Center.Y);
