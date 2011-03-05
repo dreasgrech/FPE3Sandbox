@@ -102,7 +102,6 @@
     <Compile Include="Entities\Rope.cs" />
     <Compile Include="Entities\ScreenBounds.cs" />
     <Compile Include="Entities\Sphere.cs" />
-    <Compile Include="Entities\Terrain.cs" />
     <Compile Include="Entities\Vehicle.cs" />
     <Compile Include="Entities\Water.cs" />
     <Compile Include="Game1.cs" />

@@ -99,7 +99,7 @@ namespace FPE3Sandbox
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.DeepSkyBlue);
+            GraphicsDevice.Clear(Color.Blue);
 
             // TODO: Add your drawing code here
 
