@@ -1,9 +1,9 @@
-﻿<xapCache source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\FPE3Sandbox.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="06/03/2011 10:28:09">
+﻿<xapCache source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\FPE3Sandbox.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="06/03/2011 11:41:20">
   <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\Background.png" archivePath="Background.png" lastWriteTime="27/02/2011 12:20:17" />
   <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\GameThumbnail.png" archivePath="GameThumbnail.png" lastWriteTime="27/02/2011 12:20:17" />
   <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="27/02/2011 12:32:29" />
   <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\obj\Windows Phone\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="27/02/2011 12:32:29" />
-  <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\FPE3Sandbox.dll" archivePath="FPE3Sandbox.dll" lastWriteTime="06/03/2011 10:28:08" />
+  <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\FPE3Sandbox.dll" archivePath="FPE3Sandbox.dll" lastWriteTime="06/03/2011 11:41:11" />
   <file source="C:\farseerphysics-85371\DebugViews\DebugViewXNA\bin\Windows Phone\Debug\DebugViewXNA.dll" archivePath="DebugViewXNA.dll" lastWriteTime="27/02/2011 14:06:17" />
   <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FarseerPhysicsBaseFramework\bin\Windows Phone\Debug\FarseerPhysicsBaseFramework.dll" archivePath="FarseerPhysicsBaseFramework.dll" lastWriteTime="06/03/2011 01:23:31" />
   <file source="C:\farseerphysics-85371\Branches\XNA\bin\Windows Phone\Release\FarseerPhysicsXNA.dll" archivePath="FarseerPhysicsXNA.dll" lastWriteTime="27/02/2011 13:31:17" />
@@ -27,6 +27,7 @@
   <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrainFull2.xnb" archivePath="Content\Images\Terrain\terrainFull2.xnb" lastWriteTime="06/03/2011 00:52:37" />
   <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrainFull3.xnb" archivePath="Content\Images\Terrain\terrainFull3.xnb" lastWriteTime="06/03/2011 00:52:38" />
   <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\bigWheel.xnb" archivePath="Content\Images\bigWheel.xnb" lastWriteTime="06/03/2011 01:28:27" />
+  <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Sprites\gb.xnb" archivePath="Content\Images\Sprites\gb.xnb" lastWriteTime="06/03/2011 10:56:32" />
   <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\font.xnb" archivePath="Content\font.xnb" lastWriteTime="27/02/2011 13:10:52" />
   <file source="C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Config\collisioncategories.xml" archivePath="Config\collisioncategories.xml" lastWriteTime="27/02/2011 14:48:30" />
 </xapCache>

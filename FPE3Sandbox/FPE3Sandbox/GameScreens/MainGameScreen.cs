@@ -41,7 +41,7 @@ namespace FPE3Sandbox.GameScreens
             world = new World(gravity);
             game.Services.AddService(typeof(World), world);
 
-            var sphere = new Sphere(game, world, new Vector2(3000, 0), 1f);
+            var sphere = new Sphere(game, world, new Vector2(200, 0), 1f);
 
             var landscapePieces = new string[2];
             for (int i = 0; i < landscapePieces.Length; i++)
@@ -71,10 +71,10 @@ namespace FPE3Sandbox.GameScreens
                                //vehicle
                                bridge,
                                rope,
-                               new Water(game,world,new Vector2(2617, 305), 395,80 ),
+                               new Water(game,spriteBatch, world,new Vector2(2617, 305), 395,80 ),
                                crosshair,
                                wheel,
-                               new ExplosionTrigger(game,world)
+                               //new ExplosionTrigger(game,world)
                            };
             parallax = new Parallax(game,spriteBatch,ParallaxDirection.Left);
             parallax.AddLayer("Images/Parallax/cloud1", 0.5f, 2);

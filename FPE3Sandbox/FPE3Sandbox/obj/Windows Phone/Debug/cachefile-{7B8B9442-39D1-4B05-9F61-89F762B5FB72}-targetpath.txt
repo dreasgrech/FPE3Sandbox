@@ -17,3 +17,4 @@ Content\Images\Terrain\terrainFull1.xnb
 Content\Images\Terrain\terrainFull2.xnb
 Content\Images\Terrain\terrainFull3.xnb
 Content\Images\bigWheel.xnb
+Content\Images\Sprites\gb.xnb

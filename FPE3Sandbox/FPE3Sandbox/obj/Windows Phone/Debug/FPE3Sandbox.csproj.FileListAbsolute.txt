@@ -39,6 +39,7 @@ C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\F
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrainFull2.xnb
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Terrain\terrainFull3.xnb
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\bigWheel.xnb
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\Content\Images\Sprites\gb.xnb
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\FPE3Sandbox.xap
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\obj\Windows Phone\Debug\XapCacheFile.xml
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\FPE3Sandbox\FPE3Sandbox\FPE3Sandbox\bin\Windows Phone\Debug\AppManifest.xaml
