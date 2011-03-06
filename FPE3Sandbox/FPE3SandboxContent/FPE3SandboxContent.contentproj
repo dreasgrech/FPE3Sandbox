@@ -87,43 +87,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Images\ropeSection.png">
-      <Name>ropeSection</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="Images\sphere1.png">
       <Name>sphere1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Images\Terrain\terrain-rocky.png">
-      <Name>terrain-rocky</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Images\Terrain\terrain2.png">
-      <Name>terrain2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Images\Terrain\terrain2_foreground.png">
-      <Name>terrain2_foreground</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Images\Terrain\terrain3.png">
-      <Name>terrain3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Images\Terrain\terrain3_foreground.png">
-      <Name>terrain3_foreground</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Images\Terrain\terrain_flat.png">
-      <Name>terrain_flat</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -132,18 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Images\wheel_green.png">
-      <Name>wheel_green</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="Images\wheel_left.png">
       <Name>wheel_left</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Images\wheel_red.png">
-      <Name>wheel_red</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -161,23 +116,30 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Images\Terrain\terrainLong0.png">
-      <Name>terrainLong0</Name>
+    <Compile Include="Images\Terrain\terrainFull0.png">
+      <Name>terrainFull0</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Images\Terrain\terrainLong1.png">
-      <Name>terrainLong1</Name>
+    <Compile Include="Images\Terrain\terrainFull1.png">
+      <Name>terrainFull1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Images\Terrain\terrainLong2.png">
-      <Name>terrainLong2</Name>
+    <Compile Include="Images\Terrain\terrainFull2.png">
+      <Name>terrainFull2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Images\Terrain\terrainLong3.png">
-      <Name>terrainLong3</Name>
+    <Compile Include="Images\Terrain\terrainFull3.png">
+      <Name>terrainFull3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Images\bigWheel.png">
+      <Name>bigWheel</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

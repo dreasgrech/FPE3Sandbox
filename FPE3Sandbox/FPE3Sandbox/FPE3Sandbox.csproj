@@ -90,8 +90,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\BigWheel.cs" />
     <Compile Include="Entities\Bridge.cs" />
+    <Compile Include="Entities\CountdownTimer.cs" />
     <Compile Include="Entities\Crosshair.cs" />
+    <Compile Include="Entities\ExplosionTrigger.cs" />
     <Compile Include="Entities\Helicopter.cs" />
     <Compile Include="Entities\IPlatform.cs" />
     <Compile Include="Entities\Landscape.cs" />
@@ -102,6 +105,7 @@
     <Compile Include="Entities\Rope.cs" />
     <Compile Include="Entities\ScreenBounds.cs" />
     <Compile Include="Entities\Sphere.cs" />
+    <Compile Include="Entities\LoopSpriteAnimator.cs" />
     <Compile Include="Entities\Vehicle.cs" />
     <Compile Include="Entities\Water.cs" />
     <Compile Include="Game1.cs" />

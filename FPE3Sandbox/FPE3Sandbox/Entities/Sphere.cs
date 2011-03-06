@@ -89,7 +89,7 @@ namespace FPE3Sandbox.Entities
             {
                 if (currentJumpCount >= consecutiveJumps)
                 {
-                    return;
+                    //return;
                 }
 
                 lastJumpTime = DateTime.Now;
@@ -100,7 +100,7 @@ namespace FPE3Sandbox.Entities
                     //Body.ResetDynamics();
                 }
                 sphere.Body.ApplyForce(new Vector2(0, -jumpForce));
-                isOnGround = false;
+                //isOnGround = false;
             }
 
         }
